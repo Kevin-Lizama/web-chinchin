@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda y Donaciones - La Chinchin</title>
+
+    <!-- Fuentes de Google de styles.css -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Pacifico&family=Nunito:wght@400;600;700;800&family=Bangers&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS global -->
+    <link rel="stylesheet" href="asset/css/styles.css">
+    <!-- El CSS específico de esta sección -->
+    <link rel="stylesheet" href="asset/css/styleTienda.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR (Opcional, copiando el header base, pero por ahora solo main) -->
+    <!-- Contenedor principal -->
+    <main>
+        <!-- 
+            Inicio de la Sección Solicitada 
+        -->
+        <section id="tienda-donaciones" class="store-donations" aria-labelledby="titulo-seccion">
+            <header class="store-donations__header">
+                <h1 id="titulo-seccion" class="store-donations__title">Únete a nuestra <span>celebración</span> de 20
+                    años</h1>
+                <p class="store-donations__subtitle">Apoya nuestro arte y lleva contigo parte de nuestra historia viva
+                    en las calles.</p>
+            </header>
+
+            <div class="store-donations__container">
+                <!-- ============================================== -->
+                <!-- COMPONENTE 1: Tienda Conmemorativa '20 Años'   -->
+                <!-- ============================================== -->
+                <div class="store-module">
+                    <h2 class="store-module__title">Tienda Conmemorativa '20 Años'</h2>
+
+                    <!-- Layout Grid para los productos -->
+                    <div class="store-module__grid">
+
+                        <!-- Tarjeta de Producto 1 -->
+                        <article class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <span class="product-card__badge" aria-label="Edición Limitada">Edición Limitada</span>
+                                <img class="product-card__img"
+                                    src="https://via.placeholder.com/400x500/C0392B/FFFFFF?text=Polera+20+A%C3%B1os"
+                                    alt="Polera conmemorativa de 20 años de Chinchintirapie" loading="lazy">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">Polera Conmemorativa 20 Años</h3>
+                                <p class="product-card__price">$15.000</p>
+                                <a href="https://wa.me/56912345678" class="product-card__btn"
+                                    aria-label="Consultar disponibilidad por WhatsApp">Consultar</a>
+                            </div>
+                        </article>
+
+                        <!-- Tarjeta de Producto 2 -->
+                        <article class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <span class="product-card__badge" aria-label="Edición Limitada">Edición Limitada</span>
+                                <img class="product-card__img"
+                                    src="https://via.placeholder.com/400x500/16A085/FFFFFF?text=Poler%C3%B3n+Oficial"
+                                    alt="Polerón oficial de escuela carnavalera" loading="lazy">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">Polerón Oficial Escuela</h3>
+                                <p class="product-card__price">$25.000</p>
+                                <a href="https://wa.me/56912345678" class="product-card__btn"
+                                    aria-label="Consultar disponibilidad por WhatsApp">Consultar</a>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- ============================================== -->
+                <!-- COMPONENTE 2: Módulo de Donaciones             -->
+                <!-- ============================================== -->
+                <div class="donation-module">
+                    <div class="donation-module__card">
+                        <h2 class="donation-module__title">Apoya el Carnaval</h2>
+
+                        <p class="donation-module__description">
+                            Tu aporte es fundamental. Sostiene directamente <strong>nuestra escuela de
+                                formación</strong> y los <strong>talleres</strong> que realizamos para mantener viva la
+                            tradición.
+                        </p>
+
+                        <form class="donation-module__form" aria-label="Formulario de donación voluntaria">
+                            <fieldset class="donation-module__fieldset">
+                                <legend class="sr-only">Selecciona un monto sugerido para donar</legend>
+                                <div class="donation-module__amounts">
+                                    <button type="button" class="donation-module__btn-amount"
+                                        aria-pressed="false">$5.000</button>
+                                    <button type="button" class="donation-module__btn-amount"
+                                        aria-pressed="false">$10.000</button>
+                                    <button type="button" class="donation-module__btn-amount"
+                                        aria-pressed="false">$20.000</button>
+                                </div>
+                            </fieldset>
+
+                            <div class="donation-module__custom-amount">
+                                <label for="monto-personalizado" class="donation-module__label">Monto
+                                    Personalizado</label>
+                                <div class="donation-module__input-wrapper">
+                                    <span class="donation-module__currency" aria-hidden="true">$</span>
+                                    <input type="number" id="monto-personalizado" class="donation-module__input"
+                                        placeholder="0" min="1000" step="1000">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="donation-module__btn-submit">Aportar Ahora 🥁</button>
+
+                            <small class="donation-module__legal">
+                                Aportes respaldados legalmente. Somos un Centro Cultural con Personalidad Jurídica
+                                vigente.
+                            </small>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin de la Sección Solicitada -->
+    </main>
+
+</body>
+
+</html>
